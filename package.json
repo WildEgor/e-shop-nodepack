@@ -1,6 +1,6 @@
 {
   "name": "@wildegor/e-shop-nodepack",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "eShopNodepack - common packages for Node.js projects",
   "author": "kartashov_egor96@mail.ru",
   "private": false,
