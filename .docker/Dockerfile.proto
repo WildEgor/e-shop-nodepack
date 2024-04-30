@@ -1,0 +1,12 @@
+FROM node:18-alpine3.18
+
+WORKDIR /usr/app
+
+COPY ../proto /usr/app/proto
+COPY ../package.json /usr/app/package.json
+
+RUN mkdir -p /usr/app/src/@types/proto
+
+RUN npm install -g grpc-tools ts-proto
+
+CMD [ "npm", "run", "gen:proto" ]

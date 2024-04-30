@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package auth.proxy;
+
+option go_package = "gAuth/proto";
+
+service AuthService {
+  rpc ValidateToken(ValidateTokenRequest) returns (UserData);
+  rpc FindByIds(FindByIdsRequest) returns (FindByIdsResponse);
+}
+
+message UserData {
+  string id = 1;
+  string phone = 2;
+  string email = 3;
+  string first_name = 4;
+  string last_name = 5;
+  bool is_active = 6;
+}
+
+message ValidateTokenRequest {
+  string token = 1;
+}
+
+message FindByIdsRequest {
+  repeated string ids = 1;
+}
+
+message FindByIdsResponse {
+  repeated UserData users = 1;
+  int32 total = 2;
+}
