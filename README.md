@@ -1,7 +1,7 @@
 # e-shop-nodepack
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Github Test Status](https://github.com/WildEgor/e-shop-nodepack/workflows/testing/badge.svg)](https://github.com/WildEgor/e-shop-nodepack/workflows/testing/badge.svg)
+[![Github Test Status](https://github.com/WildEgor/e-shop-nodepack/actions/workflows/testing.yml/badge.svg)](https://github.com/WildEgor/e-shop-nodepack/actions/workflows/testing.yml/badge.svg)
 [![codecov](https://codecov.io/gh/WildEgor/e-shop-gopack/branch/main/graph/badge.svg)](https://codecov.io/gh/WildEgor/e-shop-gopack)
 
 Contains shared code for eShop demo
